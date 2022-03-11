@@ -93,12 +93,15 @@
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                          Accordion Item #2
+                            what does js event loop do
                         </button>
                       </h2>
                       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                         <div class="accordion-body">
-                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <p>
+                              js মুলত কাজ করে v8 Engine এর মাধ্যমে । v8 Engine তৈরি করা হয়েছিল chrome ব্রয়াউজারের জন্য । js ডেভেলপার এই v8 Engine এর মাধ্যমে  js কাজ করায় । আর v8 Engine এর কাজ হল Heap এবং call stack . 
+                              heap মেমরি ম্যানেজমেন্ট এর কাজ করে থাকে যা unstructured উপায়ে । আর call stack কাজ করে lifo পদ্ধতিতে । lifo অর্থ last in first out, অর্থাৎ যে শেষে আসবে সে সবার আগে চলে যাবে । এই কাজ করা হয় ফাংশন কে কল করার মাধ্যমে । আবার call stack এর একটা assistant রয়েছে , যখন সে ওয়েব ব্রাউজারে কাজ করে তখন সেটি web-api assistant এর মাধ্যমে এবং যখন Node এ কাজ করে তখন c++ api এর মাধ্যমে কাজ করে । এসব কাজ করা হয় সিঙ্গেল থ্রেড পদ্ধতিতে । call stack এর assistant web-api বিশেষ এক ধরনের কাজ করে অর্থাৎ call stack এ যদি settimeout বা fetch এধরনের কাজ করে  এই web-api এর কাজ পুরাপুরি সম্পাধন করা হয়েছে কি না তা দেখার দায়িত্ব হল event-loop  এর । অর্থাৎ queue এবং stack এর মধ্যে যোগাযোগ করবে ।  যা asynchronous পদ্ধতিতে সম্পাদন হয় ।
+                     </p>
                         </div>
                       </div>
                     </div>
@@ -130,14 +133,19 @@
                                     <td>একট্যাবে কাজ করে । </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">2</th>
+                                    <th scope="row">3</th>
                                     <td>ম্যানুয়ালি ডাটা ডিলিট করা যায় । </td>
                                     <td>ট্যাব বন্ধ করলেই ডাটা মুছে যায় । </td>
                                   </tr>
                                   <tr>
-                                    <th scope="row">2</th>
+                                    <th scope="row">4</th>
                                     <td>ক্যাপাসিটি ১০mb  </td>
                                     <td>ক্যাপাসিটি ৫mb  </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">5</th>
+                                    <td>Storage location Browser only</td>
+                                    <td>Storage location Browser only</td>
                                   </tr>
                                 </tbody>
                               </table>
