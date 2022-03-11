@@ -86,7 +86,14 @@
                       </h2>
                       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
                         <div class="accordion-body">
-                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          <p>
+                              js হল interpreted, high-level, scripting language . js মুলত ওয়েব ডিজাইন, ডেভেলপমেন্ট, আপ্লিকেশন তৈরি এর কাজে ব্যবহার করা হয় । তবে backend এ এটি একটু জটিল উপায়ে কার্য সম্পাদন করে । JavaScript যখন ব্রাউজারে কাজ করে তখন একেক ব্রাউজারে একেকভাবে কাজ করে উদাহরণ হিশেবে বলা যায় chrome এ v8 ইঞ্জিন, Edge এ Chakra এবং মজিলাতে spider-monkey ইঞ্জিনে কাজ করে । js হল interpreted language অর্থাৎ এটি syncronous উপায়ে একলাইনের পরে একলাইন এভাবে এক্সিকিউশন করে । 
+                              js যখন এক্সিকিউশন হয় তখন কয়েকটা কাজ সম্পাদন করে । 1. parse 2. AST 3. Conversion to machine language 4. converted machine language 5. code runs
+                              1. প্রথমে কোড parse চেক করে কোডে কোন ইরর আছে কি না লাইন বাই লাইন চেক করে । 
+                              2. এটি parse কে চেক করে এবং AST নামক ডাটা স্ত্রাকচার তৈরি করে । 
+                              3. এর পরে সম্পুর্ন কোড কে মেশিন কোডে রুপান্তর করতে থাকে । 
+                              4. এরপর সম্পুর্ন মেশিন কোডে রুপান্তর করে । 
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -100,7 +107,7 @@
                         <div class="accordion-body">
                           <p>
                               js মুলত কাজ করে v8 Engine এর মাধ্যমে । v8 Engine তৈরি করা হয়েছিল chrome ব্রয়াউজারের জন্য । js ডেভেলপার এই v8 Engine এর মাধ্যমে  js কাজ করায় । আর v8 Engine এর কাজ হল Heap এবং call stack . 
-                              heap মেমরি ম্যানেজমেন্ট এর কাজ করে থাকে যা unstructured উপায়ে । আর call stack কাজ করে lifo পদ্ধতিতে । lifo অর্থ last in first out, অর্থাৎ যে শেষে আসবে সে সবার আগে চলে যাবে । এই কাজ করা হয় ফাংশন কে কল করার মাধ্যমে । আবার call stack এর একটা assistant রয়েছে , যখন সে ওয়েব ব্রাউজারে কাজ করে তখন সেটি web-api assistant এর মাধ্যমে এবং যখন Node এ কাজ করে তখন c++ api এর মাধ্যমে কাজ করে । এসব কাজ করা হয় সিঙ্গেল থ্রেড পদ্ধতিতে । call stack এর assistant web-api বিশেষ এক ধরনের কাজ করে অর্থাৎ call stack এ যদি settimeout বা fetch এধরনের কাজ করে  এই web-api এর কাজ পুরাপুরি সম্পাধন করা হয়েছে কি না তা দেখার দায়িত্ব হল event-loop  এর । অর্থাৎ queue এবং stack এর মধ্যে যোগাযোগ করবে ।  যা asynchronous পদ্ধতিতে সম্পাদন হয় ।
+                              heap মেমরি ম্যানেজমেন্ট এর কাজ করে থাকে যা unstructured উপায়ে । আর call stack কাজ করে lifo পদ্ধতিতে । lifo অর্থ last in first out, অর্থাৎ যে শেষে আসবে সে সবার আগে চলে যাবে । এই কাজ করা হয় ফাংশন কে কল করার মাধ্যমে । আবার call stack এর একটা assistant রয়েছে , যখন সে ওয়েব ব্রাউজারে কাজ করে তখন সেটি web-api assistant এর মাধ্যমে এবং যখন Node এ কাজ করে তখন c++ api এর মাধ্যমে কাজ করে । এসব কাজ করা হয় সিঙ্গেল থ্রেড পদ্ধতিতে । call stack এর assistant web-api বিশেষ এক ধরনের কাজ করে অর্থাৎ call stack এ যদি settimeout বা fetch এধরনের কাজ করে  এই web-api এর কাজ পুরাপুরি সম্পাধন করা হয়েছে কি না তা দেখার দায়িত্ব হল event-loop  এর । অর্থাৎ event-loop queue এবং stack এর মধ্যে যোগাযোগ রক্ষা করবে ।  যা asynchronous পদ্ধতিতে সম্পাদন হয় ।
                      </p>
                         </div>
                       </div>
